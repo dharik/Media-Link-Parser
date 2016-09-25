@@ -1,0 +1,9 @@
+For matching youtube:
+'/(http:\/\/)?(www\.)?((youtube\.com\/watch\?v=)|(youtu\.be\/))([\d\w]+)/'
+
+For replacing youtube with embedded player:
+'/(http:\/\/)?(www\.)?((youtube\.com\/watch\?v=)|(youtu\.be\/))([\d\w]+)\S*/', 
+'<iframe width="560" height="315" src="http://www.youtube.com/embed/$6" frameborder="0" allowfullscreen></iframe><br />', 
+
+For matching images:
+'/(http:\/\/)[\S]+\.(jpg|gif|png|jpeg|bmp)/'
